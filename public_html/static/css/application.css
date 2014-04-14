@@ -1,3 +1,48 @@
+#header {
+  margin-bottom: 60px;
+}
+
+#header .navbar {
+  background-color: #005580;
+  border-width: 0;
+}
+
+#header .navbar-toggle {
+  background-color: transparent;
+  border: none;
+  margin-right: 0;
+}
+
+#header .navbar-toggle .icon-bar {
+  background-color: #eeeeee;
+}
+
+#header .navbar-header h2 {
+  margin-top: 8px;
+}
+
+#header a {
+  color: #eeeeee;
+}
+
+#header a:hover {
+  text-decoration: none;
+}
+
+#header .dropdown a {
+  background-color: #005580;
+}
+
+#header ul .dropdown-menu {
+  background-color: #005580;
+  border-top: none;
+  min-width: 100px;
+}
+
+.page a {
+  color: #005580;
+}
+
 h1 {
   text-align: center;
 }
