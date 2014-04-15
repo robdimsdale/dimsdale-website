@@ -10,19 +10,19 @@
 <div class="row">
   <div class="col-xs-3 col-xs-offset-0 col-sm-2 col-sm-offset-2 col-md-1 col-md-offset-4">
     <div class="row text-center">
-      <a href="http://github.com/robdimsdale"><img src="/static/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub" title="GitHub"/></a>
+      <a href="http://github.com/robdimsdale"><i class="fa fa-github fa-4x"></i></a>
     </div>
   </div>
 
   <div class="col-xs-3 col-sm-2 col-md-1">
     <div class="row text-center">
-      <a href="http://bitbucket.org/robdimsdale"><img src="/static/images/bitbucket-logo-32px.png" alt="BitBucket" title="BitBucket"/></a>
+      <a href="http://bitbucket.org/robdimsdale"><i class="fa fa-bitbucket fa-4x"></i></a>
     </div>
   </div>
 
   <div class="col-xs-3 col-sm-2 col-md-1">
     <div class="row text-center">
-      <a href="http://www.linkedin.com/profile/view?id=177587965"><img src="/static/images/InBug-30px-R.png" alt="LinkedIn" title="LinkedIn"/></a>
+      <a href="http://www.linkedin.com/profile/view?id=177587965"><i class="fa fa-linkedin fa-4x"></i></a>
     </div>
   </div>
 
