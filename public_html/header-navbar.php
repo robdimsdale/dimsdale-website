@@ -15,8 +15,9 @@
 </head>
 
 <body>
+<div id="wrap">  
   <div id="header">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="row">

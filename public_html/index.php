@@ -31,10 +31,4 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-xs-12">
-    <hr/>
-  </div>
-</div>
-
-<? require('footer.php'); ?>
+<?php require('footer.php'); ?>

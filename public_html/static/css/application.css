@@ -1,10 +1,7 @@
-#header {
-  margin-bottom: 60px;
-}
-
 #header .navbar {
   background-color: #005580;
   border-width: 0;
+  border-radius: 0;
 }
 
 #header .navbar-toggle {
@@ -51,13 +48,44 @@ h1 {
   text-align: center;
 }
 
-hr {
-  border-width: 3px 0 0;
-}
-
 i.fa-lock {
   padding-top: 2px;
   margin-left: 2px;
   font-size: 0.8em;
   vertical-align: top;
+}
+
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -80px;
+  /* Pad bottom by footer height */
+  padding: 0 0 80px;
+}
+
+#footer {
+  margin-top: 20px;
+  height: 60px;
+  background-color: eee;
+}
+
+#footer hr {
+  margin: 0;
+}
+
+#footer p {
+  margin-top: 10px;
+}
+
+#footer .credit {
+  text-align: right;
 }
