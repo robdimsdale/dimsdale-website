@@ -30,6 +30,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
                 <li><a href="/about-me/">About Me</a></li>
                 <li><a href="/resume/">Resume</a></li>
               </ul>
