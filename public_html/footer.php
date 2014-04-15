@@ -13,7 +13,7 @@
             <p class="text-muted">&copy; 2014 Rob Dimsdale</p>
           </div>
           <div class="col-xs-12 col-sm-8 col-md-6">
-            <p class="text-muted credit">Font Awesome - <a href="http://fontawesome.io">http://fontawesome.io</a></p>
+            <p class="text-muted credit">Using <a href="http://fontawesome.io">fontawesome.io</a> by Dave Gandy</p>
           </div>
         </div>
       </div>

@@ -67,14 +67,14 @@ body {
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
-  margin: 0 auto -101px;
+  margin: 0 auto -81px;
   /* Pad bottom by footer height */
-  padding: 0 0 101px;
+  padding: 0 0 81px;
 }
 
 #footer {
   margin-top: 20px;
-  height: 81px;
+  height: 61px;
   background-color: eee;
 }
 
@@ -84,6 +84,7 @@ body {
 
 #footer p {
   margin-top: 10px;
+  margin-bottom: 0;
 }
 
 #footer .credit {
@@ -93,5 +94,7 @@ body {
 @media screen and (max-width: 768px) {
   #footer .credit {
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px
   }
 }
