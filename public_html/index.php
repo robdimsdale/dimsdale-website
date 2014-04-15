@@ -22,7 +22,7 @@
 
   <div class="col-xs-3 col-sm-2 col-md-1">
     <div class="row text-center">
-      <a href="http://www.linkedin.com/profile/view?id=177587965"><i class="fa fa-linkedin fa-4x"></i></a>
+      <a href="http://www.linkedin.com/in/robdimsdale"><i class="fa fa-linkedin fa-4x"></i></a>
     </div>
   </div>
 
