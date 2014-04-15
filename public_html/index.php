@@ -27,8 +27,11 @@
   </div>
 
   <div class="col-xs-3 col-sm-2 col-md-1">
-    <a href="http://another.com">another</a>
+    <div class="row text-center">
+      <a href="http://twitter.com/robdimsdale"><i class="fa fa-twitter fa-4x"></i></a>
+    </div>
   </div>
+
 </div>
 
 <?php require('footer.php'); ?>
