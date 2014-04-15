@@ -55,9 +55,9 @@ hr {
   border-width: 3px 0 0;
 }
 
-span.glyphicon-lock {
+i.fa-lock {
   padding-top: 2px;
   margin-left: 2px;
-  font-size: 0.7em;
+  font-size: 0.8em;
   vertical-align: top;
 }
