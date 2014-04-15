@@ -33,6 +33,13 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about-me/">About Me</a></li>
                 <li><a href="/resume/">Resume</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">more <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://jenkins.dimsdale.net">Jenkins<span class="glyphicon glyphicon-lock"></span></a></li>
+                    <li><a href="https://recipes.dimsdale.net">Recipes<span class="glyphicon glyphicon-lock"></span></a></li>
+                  </ul>
+                </li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.col-md-12 -->

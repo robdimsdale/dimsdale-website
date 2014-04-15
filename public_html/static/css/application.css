@@ -54,3 +54,10 @@ h1 {
 hr {
   border-width: 3px 0 0;
 }
+
+span.glyphicon-lock {
+  padding-top: 2px;
+  margin-left: 2px;
+  font-size: 0.7em;
+  vertical-align: top;
+}

@@ -28,15 +28,4 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-xs-12">
-    <a href="https://recipes.dimsdale.net">recipes (secure)</a>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <a href="https://jenkins.dimsdale.net">jenkins (secure)</a>
-  </div>
-</div>
-
 <? require('footer.php'); ?>
