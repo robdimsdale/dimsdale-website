@@ -98,3 +98,7 @@ body {
     margin-bottom: 10px
   }
 }
+
+#footer a {
+  color: #005580;
+}
