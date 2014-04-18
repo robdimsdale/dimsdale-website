@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<div id="wrap">  
+<div id="wrap">
   <div id="header">
     <nav class="navbar navbar-default" role="navigation">
       <div class="container">
@@ -44,6 +44,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about-me/">About Me</a></li>
+                <li><a href="/projects/">Projects</a></li>
                 <li><a href="/resume/">Resume</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">more <b class="caret"></b></a>
