@@ -9,4 +9,4 @@ About
 Source for [dimsdale.net]
 
  [Apache v2 License]: https://github.com/robdimsdale/dimsdale-website/raw/master/LICENSE
- [dimsdale.net http://dimsdale.net]
+ [dimsdale.net]: http://dimsdale.net
