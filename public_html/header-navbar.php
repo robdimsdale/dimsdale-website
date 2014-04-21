@@ -1,15 +1,3 @@
-<?php
-
-$host = "";
-foreach (apache_request_headers() as $header => $value) {
-    if ($header == "Host") {
-        $host = $value;
-        if (strpos($host, "www.") === 0) {
-            $host = substr($host, 4);
-        }
-    }
-}
-print <<< EOT
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,7 +36,7 @@ print <<< EOT
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <h2><a href="/">$host</a></h2>
+              <h2><a href="/">dimsdale.net</a></h2>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,5 +61,3 @@ print <<< EOT
     </nav>
   </div>
   <div class="container page">
-EOT;
-?>
