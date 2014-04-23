@@ -1,29 +1,9 @@
 <?php
+include 'HeadersHelper.php';
 
-function get_http_headers() {
-	$headers = '';
-	foreach ($_SERVER as $header => $value) {
-		if (substr($header, 0, 5) == 'HTTP_') {
-			$header = substr($header, 5);
-			$header = str_replace('_', ' ', $header);
-			$header = strtolower($header);
-			$header = ucwords($header);
-			$header = str_replace(' ', '-', $header);
-			$headers[$header] = $value;
-		}
-   }
-   return $headers; 
-}
+$headersHelper = new HeadersHelper();
+$host = $headersHelper->getHost();
 
-$host = "";
-foreach (get_http_headers() as $header => $value) {
-    if ($header == "Host") {
-        $host = $value;
-        if (strpos($host, "www.") === 0) {
-            $host = substr($host, 4);
-        }
-    }
-}
 print <<< EOT
 <!DOCTYPE html>
 <html>
