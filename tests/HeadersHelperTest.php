@@ -1,6 +1,6 @@
 <?php
 
-require(__DIR__ . '/../src/HeadersHelper.php');
+require(__DIR__ . '/../public_html/HeadersHelper.php');
 
 class HeadersHelperTest extends PHPUnit_Framework_TestCase {
 
