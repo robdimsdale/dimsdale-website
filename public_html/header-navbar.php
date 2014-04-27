@@ -57,7 +57,6 @@ print <<< EOT
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">more <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="https://jenkins.dimsdale.net">Jenkins<i class="fa fa-lock"></i></a></li>
-                    <li><a href="https://recipes.dimsdale.net">Recipes<i class="fa fa-lock"></i></a></li>
                   </ul>
                 </li>
               </ul>
