@@ -1,0 +1,3 @@
+[submodule "resume-json"]
+	path = resume-json
+	url = git@github.com:robdimsdale/resume-json.git

@@ -1,0 +1,14 @@
+#!/bin/bash -x
+
+resume_dir=public_html/resume
+resume_theme=classy
+
+git pull && \
+git submodule foreach --recursive git submodule sync && \
+git submodule update --init --recursive
+
+cp resume-json/resume.json $resume_dir/robdimsdale-resume.json
+cd resume-json/ && resume export resume.json --theme $resume_theme --format html && cd ..
+cp resume-json/resume.json.html $resume_dir/robdimsdale-resume.html
+
+exit 0

@@ -11,7 +11,7 @@
     <h3>Garage-Pi</h3>
     <p>A webserver written in golang to display the output of a Raspberry Pi camera module and trigger gpio.</p>
     <p>A typical use would be to display the interior of a garage and trigger the garage door via gpio.</p>
-    <a href="https://github.com/robdimsdale/garage-pi/">View the GitHub project</a>
+    <p><a href="https://github.com/robdimsdale/garage-pi/">View the source on GitHub</a>.</p>
   </div>
 </div>
 
@@ -21,7 +21,7 @@
     <p>Java command-line and android app to check rent owed at <a href="http://myequityapartments.com">myequityapartments.com</a></p>
     <p>Built with Spring Web MVC and Spring for Android, and uses Gradle as the build tool.</p>
     <p>It behaves like a browser, interacting with the website the same way a human would. Therefore it is likely to break if/when the website changes. It is only useful to those with accounts with Equity Apartments, as a valid log-in is required.</p>
-    <a href="https://github.com/robdimsdale/rentchecker/">View the GitHub project</a>
+    <p><a href="https://github.com/robdimsdale/rentchecker/">View the source on GitHub</a>.</p>
   </div>
 </div>
 
