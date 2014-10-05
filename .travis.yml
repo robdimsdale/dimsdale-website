@@ -10,3 +10,5 @@ before_script:
 script:
   - ./bin/test
 
+after_script:
+  - php vendor/bin/coveralls
