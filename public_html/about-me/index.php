@@ -21,7 +21,7 @@ and Python all the way down to embedded C projects and audio circuitry.</p>
     <p>For more details, see my <a href="/projects/">projects</a> or view my <a href="/resume/">resume</a></p>
   </div>
   <div class="hidden-xs col-sm-3 col-md-2">
-    <img src="http://www.gravatar.com/avatar/43706e0956e6a52dc691978afa470d51?s=200" class="img-responsive" alt="Responsive image" />
+    <img src="https://s.gravatar.com/avatar/43706e0956e6a52dc691978afa470d51?s=200" class="img-responsive" alt="Responsive image" />
   </div>
 </div>
 
