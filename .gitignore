@@ -1,5 +1,4 @@
 vendor/
 *.log
-public_html/resume/robdimsdale-resume.json
 .idea
 build/
