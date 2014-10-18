@@ -12,15 +12,13 @@ if [ -z $HOST ]; then
   exit 1
 fi
 
-if [ -z $SRC_DIR ]; then
-  echo "SRC_DIR environment variable not set. Exiting."
-  exit 1
-fi
-
 if [ -z $HTML_DIR ]; then
   echo "HTML_DIR environment variable not set. Exiting."
   exit 1
 fi
+
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+SRC_DIR=$DIR/..
 
 export TAR_FILE=website.tar
 export REMOTE_DIR_CURRENT=/var/dimsdale-website-current
