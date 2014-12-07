@@ -4,10 +4,12 @@ php:
   - 5.5.9
 
 before_script:
+  - cd app
   - composer self-update
   - composer install
 
 script:
+  - cd ..
   - ./bin/test
 
 after_script:
