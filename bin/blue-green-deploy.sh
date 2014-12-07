@@ -18,7 +18,7 @@ if [ -z $HTML_DIR ]; then
 fi
 
 DIR="$( cd "$( dirname "$0" )" && pwd )"
-SRC_DIR=$DIR/..
+SRC_DIR=$DIR/../app
 
 export TAR_FILE=website.tar
 export REMOTE_DIR_CURRENT=/var/dimsdale-website-current
@@ -41,7 +41,7 @@ ssh $USER@$HOST "rm -rf $REMOTE_DIR_PREVIOUS && cp -r $REMOTE_DIR_CURRENT $REMOT
 echo "On $HOST, copying $REMOTE_DIR_CURRENT to $REMOTE_DIR_PREVIOUS and pointing live to $REMOTE_DIR_PREVIOUS... done"
 
 echo "On $HOST, untarring $TAR_FILE into $REMOTE_DIR_CURRENT and removing $TAR_FILE from /tmp..."
-ssh $USER@$HOST "cd $REMOTE_DIR_CURRENT && rm -rf * && tar -xf /tmp/$TAR_FILE && rm -f /tmp/$TAR_FILE"
+ssh $USER@$HOST "cd $REMOTE_DIR_CURRENT && rm -rf * && mkdir public_html && tar -xf /tmp/$TAR_FILE -C public_html && rm -f /tmp/$TAR_FILE"
 echo "On $HOST, untarring $TAR_FILE into $REMOTE_DIR_CURRENT and removing $TAR_FILE from /tmp... done"
 
 echo "On $HOST, pointing live to $REMOTE_DIR_CURRENT on $HOST..."

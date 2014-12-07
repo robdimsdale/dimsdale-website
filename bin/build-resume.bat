@@ -1,5 +1,5 @@
 @echo off
-SET resume_dir=public_html\resume
+SET resume_dir=app\resume
 SET resume_theme=classy
 
 cd ..\resume-json\ && resume export resume.json --theme %resume_theme% --format html && cd .. && ^
