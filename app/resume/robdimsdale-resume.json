@@ -27,7 +27,7 @@
         {
             "company": "Pivotal, Cloud Foundry",
             "position": "Software Engineer",
-            "website": "http://www.gopivotal.com/platform-as-a-service/pivotal-cf",
+            "website": "http://www.pivotal.io/platform-as-a-service/pivotal-cf",
             "startDate": "2014-06-23",
             "summary": "DevOps on services team for OSS and commercial products, working primarily with Go, Ruby and Bash.",
             "highlights": [
