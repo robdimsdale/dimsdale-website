@@ -31,8 +31,9 @@
             "startDate": "2014-06-23",
             "summary": "DevOps on services team for OSS and commercial products, working primarily with Go, Ruby and Bash.",
             "highlights": [
+                "Designed and implemented TCP Proxy in Go.",
                 "Adding support for RiakCS.",
-                "Extending MySQL/MariaDB to incorporate high-durability (clustering).",
+                "Extending MySQL/MariaDB to incorporate high-availability.",
                 "Migrating continuous integration from Jenkins to GoCD."
             ]
         },
