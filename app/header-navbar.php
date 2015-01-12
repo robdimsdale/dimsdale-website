@@ -50,6 +50,7 @@ print <<< EOT
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about-me/">About Me</a></li>
+                <li><a href="//blog.robdimsdale.com">Blog</a></li>
                 <li><a href="/projects/">Projects</a></li>
                 <li><a href="/resume/">Resume</a></li>
                 <li class="dropdown">
