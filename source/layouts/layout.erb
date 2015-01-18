@@ -1,14 +1,9 @@
-<?php
-include 'HeadersHelper.php';
 
-$headersHelper = new HeadersHelper();
-$host = $headersHelper->getHost();
-
-print <<< EOT
 <!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   <title>Rob Dimsdale</title>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -17,18 +12,19 @@ print <<< EOT
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="/static/css/application.css" type="text/css" />
+  <%= stylesheet_link_tag "application" %>
 
-  <link rel="icon" type="image/png" href="/static/img/favicon-196x196.png" sizes="196x196">
-  <link rel="icon" type="image/png" href="/static/img/favicon-160x160.png" sizes="160x160">
-  <link rel="icon" type="image/png" href="/static/img/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="/static/img/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="/static/img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/images/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 
 </head>
 
 <body>
 <div id="wrap">
+
   <div id="header">
     <nav class="navbar navbar-default" role="navigation">
       <div class="container">
@@ -42,7 +38,7 @@ print <<< EOT
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <h2><a href="/">$host</a></h2>
+              <h2><a href="https://robdimsdale.com">robdimsdale.com</a></h2>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,7 +46,7 @@ print <<< EOT
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about-me/">About Me</a></li>
-                <li><a href="//blog.robdimsdale.com">Blog</a></li>
+                <li><a href="https://blog.robdimsdale.com">Blog</a></li>
                 <li><a href="/projects/">Projects</a></li>
                 <li><a href="/resume/">Resume</a></li>
                 <li class="dropdown">
@@ -60,12 +56,34 @@ print <<< EOT
                   </ul>
                 </li>
               </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.col-md-12 -->
-        </div><!-- /.row -->
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   </div>
+
   <div class="container page">
-EOT;
-?>
+    <%= yield %>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <hr/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-6">
+        <p class="text-muted">&copy; 2014-2015 Rob Dimsdale</p>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-6">
+        <p class="text-muted credit">Using <a href="http://fontawesome.io">fontawesome.io</a> by Dave Gandy</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
