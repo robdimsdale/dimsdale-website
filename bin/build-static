@@ -14,3 +14,6 @@ cd $DIR/..
 bundle exec middleman build --clean
 cp source/resume/robdimsdale-resume.html build/resume/robdimsdale-resume.html
 touch build/Staticfile
+
+mkdir -p build/.well-known
+cp source/.well-known/keybase.txt build/.well-known/keybase.txt
