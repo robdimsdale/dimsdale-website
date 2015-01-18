@@ -8,7 +8,7 @@ set -x
 # irresepctive of where it's executed from.
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 
-resume_dir=$DIR/../app/resume
+resume_dir=$DIR/../source/resume
 resume_json_dir=$DIR/../resume-json
 resume_theme=classy
 
