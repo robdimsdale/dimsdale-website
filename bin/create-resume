@@ -19,6 +19,6 @@ echo "Using theme: $resume_theme"
 cd $resume_json_dir
 cp $resume_json_dir/resume.json $resume_dir/robdimsdale-resume.json
 resume export resume.json --theme $resume_theme --format html
-cp $resume_json_dir/resume.json.html $resume_dir/robdimsdale-resume.html
+cp $resume_json_dir/resume.html $resume_dir/robdimsdale-resume.html
 
 exit 0
