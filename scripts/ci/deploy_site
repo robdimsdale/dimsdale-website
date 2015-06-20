@@ -1,0 +1,37 @@
+#!/bin/bash
+
+set -eux
+
+MY_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# This script assumes that it lives two directories below the base directory.
+BASE_DIR="$( cd $MY_DIR/../.. && pwd )"
+
+CF_API="${CF_API:-https://api.run.pivotal.io}"
+CF_ORG=${CF_ORG:?}
+CF_SPACE=${CF_SPACE:?}
+CF_USER=${CF_USER:?}
+CF_APPLICATION=${CF_APPLICATION:?}
+
+cf api "${CF_API}"
+
+set +x
+CF_PASSWORD=${CF_PASSWORD:?}
+cf auth "${CF_USER}" "${CF_PASSWORD}"
+set -x
+
+cf target \
+  -o "${CF_ORG}" \
+  -s "${CF_SPACE}"
+
+pushd ${BASE_DIR}
+  STATIC_FILE_AUTH=${STATIC_FILE_AUTH:-}
+  if [ "${STATIC_FILE_AUTH}" != "" ]; then
+    echo "\$STATIC_FILE_AUTH detected - writing to Staticfile.auth"
+    echo "${STATIC_FILE_AUTH}" > Staticfile.auth
+  fi
+
+  cf push "${CF_APPLICATION}" \
+    -m 64M \
+    -b https://github.com/cloudfoundry/staticfile-buildpack.git
+popd

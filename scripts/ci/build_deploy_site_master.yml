@@ -1,0 +1,10 @@
+---
+platform: linux
+
+image: docker:///robdimsdale/blog
+
+inputs:
+- name: website-master
+
+run:
+  path: website-master/scripts/ci/build_deploy_site

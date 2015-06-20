@@ -1,0 +1,45 @@
+---
+resources:
+- name: website-develop
+  type: git
+  source:
+    uri: git@github.com:robdimsdale/dimsdale-website
+    branch: develop
+    private_key: {{private-key}}
+
+- name: website-master
+  type: git
+  source:
+    uri: git@github.com:robdimsdale/dimsdale-website
+    branch: master
+    private_key: {{private-key}}
+
+jobs:
+- name: build-deploy-site-develop
+  plan:
+  - get: website-develop
+    trigger: true
+  - task: build-deploy-site-develop
+    file: website-develop/scripts/ci/build_deploy_site_develop.yml
+    config:
+      params:
+        CF_USER: {{cf-user}}
+        CF_PASSWORD: {{cf-password}}
+        CF_ORG: {{cf-org-develop}}
+        CF_SPACE: {{cf-space-develop}}
+        CF_APPLICATION: {{cf-application-develop}}
+        STATIC_FILE_AUTH: {{static-file-auth-develop}}
+
+- name: build-deploy-site-master
+  plan:
+  - get: website-master
+    trigger: true
+  - task: build-deploy-site-master
+    file: website-master/scripts/ci/build_deploy_site_master.yml
+    config:
+      params:
+        CF_USER: {{cf-user}}
+        CF_PASSWORD: {{cf-password}}
+        CF_ORG: {{cf-org-master}}
+        CF_SPACE: {{cf-space-master}}
+        CF_APPLICATION: {{cf-application-master}}
