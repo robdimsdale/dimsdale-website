@@ -20,4 +20,4 @@ pushd "${JSON_DIR}"
 popd
 
 cp "${JSON_DIR}/resume.json" "${HTML_DIR}/robdimsdale-resume.json"
-cp "${JSON_DIR}/resume.json.html" "${HTML_DIR}/robdimsdale-resume.html"
+cp "${JSON_DIR}/resume.html" "${HTML_DIR}/robdimsdale-resume.html"
