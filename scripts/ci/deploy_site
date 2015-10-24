@@ -34,13 +34,17 @@ pushd "${base_dir}"
   if [ "${STATIC_FILE_AUTH}" != "" ]; then
     echo "\$STATIC_FILE_AUTH detected - writing to Staticfile.auth"
     echo "${STATIC_FILE_AUTH}" > Staticfile.auth
-  fi
 
-  CF_COLOR=true \
-  cf push "${CF_APPLICATION}" \
-    -m 64M \
-    -b https://github.com/cloudfoundry/staticfile-buildpack.git \
-    > "${output_file}" 2>&1
+    CF_COLOR=true \
+    cf push "${CF_APPLICATION}" \
+      -m 64M \
+      -b https://github.com/cloudfoundry/staticfile-buildpack.git \
+      > "${output_file}" 2>&1
 
     grep -v "${STATIC_FILE_AUTH}" "${output_file}"
+  else
+    cf push "${CF_APPLICATION}" \
+      -m 64M \
+      -b https://github.com/cloudfoundry/staticfile-buildpack.git
+  fi
 popd
