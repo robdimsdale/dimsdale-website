@@ -37,5 +37,5 @@ pushd "${base_dir}"
   cf push "${CF_APPLICATION}" \
     -m 64M \
     -b https://github.com/cloudfoundry/staticfile-buildpack.git \
-    | grep -v "${STATIC_FILE_AUTH}"
+    | grep --color=always -v "${STATIC_FILE_AUTH}"
 popd
