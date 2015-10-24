@@ -24,10 +24,11 @@ jobs:
   public: false
   serial: true
   plan:
-  - get: website-develop
+  - get: website
+    resource: website-develop
     trigger: true
-  - task: build-deploy-site-develop
-    file: website-develop/scripts/ci/build_deploy_site_develop.yml
+  - task: build-deploy-site
+    file: website/scripts/ci/build_deploy_site.yml
     config:
       params:
         CF_USER: {{cf-user}}
@@ -57,10 +58,11 @@ jobs:
   public: false
   serial: true
   plan:
-  - get: website-master
+  - get: website
+    resource: website-master
     trigger: true
-  - task: build-deploy-site-master
-    file: website-master/scripts/ci/build_deploy_site_master.yml
+  - task: build-deploy-site
+    file: website/scripts/ci/build_deploy_site.yml
     config:
       params:
         CF_USER: {{cf-user}}

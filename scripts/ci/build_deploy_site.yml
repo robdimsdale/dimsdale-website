@@ -4,7 +4,7 @@ platform: linux
 image: docker:///robdimsdale/middleman-site-docker-image
 
 inputs:
-- name: website-develop
+- name: website
 
 run:
-  path: website-develop/scripts/ci/build_deploy_site
+  path: website/scripts/ci/build_deploy_site
