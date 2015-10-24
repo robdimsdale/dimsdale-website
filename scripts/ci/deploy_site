@@ -27,15 +27,15 @@ cf target \
 pushd "${base_dir}"
   # Do not leak credentials
   set +x
+
   STATIC_FILE_AUTH=${STATIC_FILE_AUTH:-}
   if [ "${STATIC_FILE_AUTH}" != "" ]; then
     echo "\$STATIC_FILE_AUTH detected - writing to Staticfile.auth"
     echo "${STATIC_FILE_AUTH}" > Staticfile.auth
   fi
-  set -x
 
   cf push "${CF_APPLICATION}" \
     -m 64M \
     -b https://github.com/cloudfoundry/staticfile-buildpack.git \
-    | grep --color=always -v "${STATIC_FILE_AUTH}"
+    | grep -v "${STATIC_FILE_AUTH}"
 popd
