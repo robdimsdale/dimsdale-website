@@ -39,6 +39,7 @@ jobs:
     on_success:
       put: slack_alert
       params:
+        silent: true
         username: concourse
         icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
         channel: {{slack-channel}}
@@ -46,6 +47,7 @@ jobs:
     on_failure:
       put: slack_alert
       params:
+        silent: true
         username: concourse
         icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
         channel: {{slack-channel}}
@@ -69,6 +71,7 @@ jobs:
     on_success:
       put: slack_alert
       params:
+        silent: true
         username: concourse
         icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
         channel: {{slack-channel}}
@@ -76,6 +79,7 @@ jobs:
     on_failure:
       put: slack_alert
       params:
+        silent: true
         username: concourse
         icon_url: http://cl.ly/image/3e1h0H3H2s0P/concourse-logo.png
         channel: {{slack-channel}}
