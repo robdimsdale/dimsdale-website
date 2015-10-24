@@ -21,7 +21,7 @@ resources:
 
 jobs:
 - name: build-deploy-site-develop
-  public: false
+  public: true
   serial: true
   plan:
   - get: website
@@ -55,7 +55,7 @@ jobs:
         text: {{slack-develop-failure-text}}
 
 - name: build-deploy-site-master
-  public: false
+  public: true
   serial: true
   plan:
   - get: website
