@@ -27,6 +27,7 @@ cf target \
 
 pushd "${base_dir}"
   # Do not leak credentials
+  output_file=$(mktemp -t cf-XXXXXX)
   set +x
 
   STATIC_FILE_AUTH=${STATIC_FILE_AUTH:-}
@@ -35,8 +36,11 @@ pushd "${base_dir}"
     echo "${STATIC_FILE_AUTH}" > Staticfile.auth
   fi
 
+  CF_COLOR=true \
   cf push "${CF_APPLICATION}" \
     -m 64M \
     -b https://github.com/cloudfoundry/staticfile-buildpack.git \
-    | grep -v "${STATIC_FILE_AUTH}"
+    > "${output_file}" 2>&1
+
+    grep -v "${STATIC_FILE_AUTH}" "${output_file}"
 popd
