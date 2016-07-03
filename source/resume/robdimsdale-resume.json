@@ -1,10 +1,10 @@
 {
     "basics": {
-        "name": "Rob Dimsdale",
+        "name": "Rob Dimsdale-Zucker",
         "label": "DevOps Web Developer",
         "email": "robert.dimsdale@gmail.com",
         "website": "https://robdimsdale.com",
-        "summary": "I'm Rob Dimsdale, a software developer currently based near San Francisco where I work for Pivotal on the Cloud Foundry project. Previously I have worked for Oracle in the Tape Storage division in Colorado and Softwire in London, UK. My primary areas of focus are web applications (mainly Java, some Go and Ruby) and systems-administration, though I'm interested in various languages and technologies from MATLAB and Python all the way down to embedded C projects and audio circuitry.",
+        "summary": "I'm Rob Dimsdale-Zucker, a software developer currently based near San Francisco where I work for Pivotal on the Cloud Foundry project. Previously I have worked for Oracle in the Tape Storage division in Colorado and Softwire in London, UK. My primary areas of focus are web applications (mainly Java, some Go and Ruby) and systems-administration, though I'm interested in various languages and technologies from MATLAB and Python all the way down to embedded C projects and audio circuitry.",
         "location": {
             "city": "San Francisco",
             "countryCode": "US",
