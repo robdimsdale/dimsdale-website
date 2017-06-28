@@ -109,3 +109,8 @@ body {
 #footer a {
   color: #005580;
 }
+
+.resume-employer {
+  font-weight: bold;
+  font-family: Montserrat;
+}
