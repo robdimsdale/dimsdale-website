@@ -114,3 +114,11 @@ body {
   font-weight: bold;
   font-family: Montserrat;
 }
+
+.resume-role {
+  font-style: italic;
+}
+
+.resume-role-date {
+  font-style: italic;
+}
