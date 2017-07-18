@@ -116,6 +116,10 @@ body {
 }
 
 .resume-role {
+  padding-bottom: 1em;
+}
+
+.resume-role-title {
   font-style: italic;
 }
 
