@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main>
+    <!-- Ranges through content/post/*.md -->
+    {{ range .Data.Pages }}
+        <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
+        {{ .Content | truncate 250 }}
+        <a href="{{ .Permalink }}">Continue reading »</a>
+    {{ end }}
+    </ul>
+</main>
+{{ end }}
