@@ -5,7 +5,7 @@ startDate: Jun. 2014
 endDate: Present
 roles:
 - title: Engineering Manager
-  startDate: Jan. 2015
+  startDate: Jan. 2016
   endDate: Present
   summary: Manager of 8-10 individuals distributed across multiple teams.
   highlights:
