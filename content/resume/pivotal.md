@@ -4,15 +4,29 @@ weight: 1
 startDate: Jun. 2014
 endDate: Present
 roles:
+- title: Engineering Director
+  startDate: October. 2017
+  endDate: Present
+  summary: |
+    Manage an office of about 40 engineers and provide technical leadership
+    to 5-10 disparate teams.
+  highlights:
+  - Sustainably growing an office from about 25 engineers to about 40 in the
+    first nine months in the role.
 - title: Engineering Manager
   startDate: Jan. 2016
-  endDate: Present
+  endDate: Oct. 2017
   summary: Manager of 8-10 individuals distributed across multiple teams.
   highlights:
-  - Providing advocacy and professional growth.
+  - |
+    Enabled, encouraged, and coached multiple engineers to reach new
+    professional accomplishments and increased levels of contribution
+    and impact.
+  - Coached individuals into becoming first-time managers and helped junior
+    managers navigate the role.
 - title: Software Engineer
   startDate: Jun. 2014
-  endDate: Present
+  endDate: Oct. 2017
   summary: |
     Dev-ops engineer across various teams, working primarily with Go,
     Ruby and Bash.
