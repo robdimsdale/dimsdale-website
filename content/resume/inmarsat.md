@@ -4,7 +4,7 @@ weight: 4
 startDate: Jul. 2010
 endDate: Sep. 2010
 roles:
-- title: Application developer.
+- title: C++ Application developer
   highlights:
   - |
     Developed C++ application for performing offline analysis of satellite

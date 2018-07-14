@@ -4,7 +4,7 @@ weight: 3
 startDate: Sep. 2011
 endDate: Sep. 2012
 roles:
-- title: Server-side web developer.
+- title: Java web developer
   summary: Design and implementation of bespoke web applications.
   highlights:
   - |

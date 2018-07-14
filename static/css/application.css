@@ -120,9 +120,22 @@ body {
 }
 
 .resume-role-title {
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .resume-role-date {
+  /* font-style: italic; */
+}
+
+.resume-role-summary {
   font-style: italic;
+}
+
+.resume-role-highlights {
+  margin-bottom: 0.4em;
+  font-style: italic;
+}
+
+.resume-role-highlights-list {
+  margin-bottom: 0;
 }

@@ -19,11 +19,12 @@
               <p>
                 <span class="resume-role-title"> {{ .title }}</span>
                 {{ if ne .startDate nil }}
-                <span class="resume-role-date">({{ .startDate }}&ndash;{{ .endDate }})</span>.
+                <span class="resume-role-date">({{ .startDate }}&ndash;{{ .endDate }})</span>
                 {{ end }}
                 </p>
-                {{ if ne .summary nil }}<p><span class="resume-role-summary">{{ .summary }}</span></p>{{ end }}
-              <ul>
+              {{ if ne .summary nil }}<p><span class="resume-role-summary">{{ .summary }}</span></p>{{ end }}
+              {{ if ne .highlights nil }}<p class="resume-role-highlights">Highlights:</p>{{ end }}
+              <ul class="resume-role-highlights-list">
               {{ range .highlights }}
                 <li>{{ . }}</li>
               {{ end }}

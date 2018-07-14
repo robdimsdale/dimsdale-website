@@ -4,7 +4,7 @@ weight: 2
 startDate: Sep. 2012
 endDate: Jun. 2014
 roles:
-- title: Server-side web developer and sysadmin.
+- title: Java web developer and Linux sysadmin
   summary: Design and implementation of a new control system for tape libraries.
   highlights:
   - |

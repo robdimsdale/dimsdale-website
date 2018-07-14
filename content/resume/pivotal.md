@@ -5,11 +5,11 @@ startDate: Jun. 2014
 endDate: Present
 roles:
 - title: Engineering Director
-  startDate: October. 2017
+  startDate: Oct. 2017
   endDate: Present
   summary: |
     Manage an office of about 40 engineers and provide technical leadership
-    to 5-10 disparate teams.
+    to 5-10 product teams.
   highlights:
   - Sustainably growing an office from about 25 engineers to about 40 in the
     first nine months in the role.
@@ -39,9 +39,8 @@ roles:
     Foundry Route Services to provide an easy, reusable mechanism to secure
     applications running on a Cloud Foundry instance.
   - |
-    Extended MySQL/MariaDB BOSH deployment to incorporate high-availability via
-    database clustering.
+    Extended MySQL/MariaDB BOSH deployment to be highly-available.
   - |
-    Migrating various teams' continuous integration from Jenkins to GoCD and
+    Migrated various teams' continuous integration from Jenkins to GoCD and
     then to Concourse.
 ---

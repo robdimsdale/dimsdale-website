@@ -4,7 +4,7 @@ weight: 5
 startDate: Jul. 2009
 endDate: Sep. 2009
 roles:
-- title: Embedded developer.
+- title: Embedded C developer
   highlights:
   - |
     Converted MATLAB model of 802.11g data transmitter/receiver to C as
