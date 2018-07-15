@@ -129,11 +129,8 @@ body {
 
 .resume-role-summary {
   font-style: italic;
-}
-
-.resume-role-highlights {
-  margin-bottom: 0.4em;
-  font-style: italic;
+  list-style-type: none;
+  margin-bottom: 0.7em;
 }
 
 .resume-role-highlights-list {

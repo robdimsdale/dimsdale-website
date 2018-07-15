@@ -1,5 +1,6 @@
 ---
 title: Inmarsat
+link: https://www.inmarsat.com/
 weight: 4
 startDate: Jul. 2010
 endDate: Sep. 2010

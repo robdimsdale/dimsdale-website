@@ -12,7 +12,7 @@
       {{ range .Data.Pages }}
       <div class="row">
         <div class="col-xs-12">
-          <h4><span class="resume-employer">{{ .Title }},</span> {{ .Params.startDate }}&ndash;{{ .Params.endDate }}</h4>
+          <h4><a href="{{ .Params.link }}" class="resume-employer">{{ .Title }},</a> {{ .Params.startDate }}&ndash;{{ .Params.endDate }}</h4>
           {{ range .Params.roles }}
           <div class="row resume-role">
             <div class="col-xs-12">
@@ -22,9 +22,8 @@
                 <span class="resume-role-date">({{ .startDate }}&ndash;{{ .endDate }})</span>
                 {{ end }}
                 </p>
-              {{ if ne .summary nil }}<p><span class="resume-role-summary">{{ .summary }}</span></p>{{ end }}
-              {{ if ne .highlights nil }}<p class="resume-role-highlights">Highlights:</p>{{ end }}
               <ul class="resume-role-highlights-list">
+              {{ if ne .summary nil }}<li class="resume-role-summary">{{ .summary }}</li>{{ end }}
               {{ range .highlights }}
                 <li>{{ . }}</li>
               {{ end }}
@@ -43,7 +42,7 @@
       <h3>Education</h3>
       <div class="row">
         <div class="col-xs-12">
-          <h4><span class="resume-employer">University of Cambridge,</span> Sep. 2007&ndash;Jul. 2011</h4>
+          <h4><a href="http://www.eng.cam.ac.uk/" class="resume-employer">University of Cambridge,</a> Sep. 2007&ndash;Jul. 2011</h4>
           <p>MEng, Engineering: Information &amp; Electrical Sciences</p>
         </div>
       </div>
