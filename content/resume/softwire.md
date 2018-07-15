@@ -6,7 +6,7 @@ startDate: Sep. 2011
 endDate: Sep. 2012
 roles:
 - title: Java web developer
-  summary: Design and implementation of bespoke web applications.
+  summary: Designed and implemented bespoke web applications.
   highlights:
   - |
     Developed content management system and API for high profile BBC

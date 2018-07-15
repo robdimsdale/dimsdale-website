@@ -18,7 +18,7 @@ roles:
 - title: Engineering Manager
   startDate: Jan. 2016
   endDate: Oct. 2017
-  summary: Manager of 8-10 individuals distributed across multiple teams.
+  summary: Managed 8-10 individuals distributed across multiple teams.
   highlights:
   - |
     Enabled, encouraged, and coached multiple engineers to reach new
@@ -30,8 +30,7 @@ roles:
   startDate: Jun. 2014
   endDate: Oct. 2017
   summary: |
-    Dev-ops engineer across various teams, working primarily with Go,
-    Ruby and Bash.
+    Dev-ops engineer across various teams; worked primarily with Go, Ruby and Bash.
   highlights:
   - |
     Created tooling to facilitate running BOSH deployments in Linux containers
