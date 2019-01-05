@@ -9,12 +9,12 @@ roles:
   startDate: Oct. 2017
   endDate: Present
   summary: |
-    Managing an office of 40 engineers and providing technical leadership to
-    5-10 product teams.
+    Managing an office of about 50 engineers and providing technical leadership to
+    about 10 product teams.
   highlights:
   - |
-    Sustainably grew an office from 25 engineers to 40 in the first nine
-    months in the role.
+    Sustainably doubled the size of the office from about 25 engineers to about 50
+    within the first year in the role.
 - title: Engineering Manager
   startDate: Jan. 2016
   endDate: Oct. 2017
