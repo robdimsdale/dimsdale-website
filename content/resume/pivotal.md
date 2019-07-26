@@ -14,7 +14,7 @@ roles:
   highlights:
   - |
     Sustainably grew the office from about 25 engineers to about 70
-    within the eighteen months in the role.
+    within the first eighteen months in the role.
 - title: Engineering Manager
   startDate: Jan. 2016
   endDate: Oct. 2017
