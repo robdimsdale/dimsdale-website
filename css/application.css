@@ -1,0 +1,138 @@
+#header .navbar {
+  background-color: #005580;
+  border-width: 0;
+  border-radius: 0;
+}
+
+#header .navbar-toggle {
+  background-color: transparent;
+  border: none;
+  margin-right: 0;
+}
+
+#header .navbar-toggle .icon-bar {
+  background-color: #FFFFFD;
+}
+
+#header .navbar-header h2 {
+  margin-top: 8px;
+}
+
+#header a {
+  color: #FFFFFD;
+}
+
+#header a:hover {
+  text-decoration: none;
+}
+
+#header .dropdown a {
+  background-color: #005580;
+}
+
+#header ul .dropdown-menu {
+  background-color: #005580;
+  border-top: none;
+  min-width: 100px;
+}
+
+.page a {
+  color: #005580;
+}
+
+h1 {
+  text-align: center;
+  font-family: Montserrat;
+}
+
+h3 {
+  font-family: Montserrat;
+}
+
+.bio-brief {
+  text-align: center;
+}
+
+i.fa-lock {
+  padding-top: 2px;
+  margin-left: 2px;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  font-family: 'Open Sans';
+  background-color: #FFFFFD;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -81px;
+  /* Pad bottom by footer height */
+  padding: 0 0 81px;
+}
+
+#footer {
+  margin-top: 20px;
+  height: 61px;
+  background-color: eee;
+}
+
+#footer hr {
+  margin: 0;
+}
+
+#footer p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#footer .credit {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  #footer .credit {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px
+  }
+}
+
+#footer a {
+  color: #005580;
+}
+
+.resume-employer {
+  font-weight: bold;
+  font-family: Montserrat;
+}
+
+.resume-role {
+  padding-bottom: 1em;
+}
+
+.resume-role-title {
+  /* font-style: italic; */
+}
+
+.resume-role-date {
+  /* font-style: italic; */
+}
+
+.resume-role-summary {
+  font-style: italic;
+  list-style-type: none;
+  margin-bottom: 0.7em;
+}
+
+.resume-role-highlights-list {
+  margin-bottom: 0;
+}

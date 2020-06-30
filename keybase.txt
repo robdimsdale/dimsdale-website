@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/robdimsdale
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://robdimsdale.com
+  * I am robdimsdale (https://keybase.io/robdimsdale) on keybase.
+  * I have a public key with fingerprint 17B0 9903 D754 56BC 9265  65C2 FADB 1BEE E926 A3F9
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "17b09903d75456bc926565c2fadb1beee926a3f9",
+            "host": "keybase.io",
+            "key_id": "fadb1beee926a3f9",
+            "kid": "010177a99f75d96db280b5700e04dba2131705d6103c195afe0478d6f3c3ca17d0840a",
+            "uid": "abeb2fb032dc26770a5bda5008d62800",
+            "username": "robdimsdale"
+        },
+        "service": {
+            "hostname": "robdimsdale.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1421615110,
+    "expire_in": 157680000,
+    "prev": "2bc4489cc3bdb724f6cbec744ffe152e889855b252a99c7ab37e9f755ab8ed24",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.1
+Comment: https://keybase.io/crypto
+
+yMM3AnicbZJ9UFRVGMbvAm0uJGIJMqM1dAsiJbjfd+9O4McG+IEQo46ajnjOvefC
+VXaXvbt8BcUAjYqjgxYQQbMkpFHqGGlhoTDsgBmM2GSo0YzTAK1AwYiQujRa9zL1
+V/115jzv8/zO+75zehYGYsGGuZ+XTY3HtPgN/d2p+diWi1HGEhw6pGLcUoLvQ/OH
+rNizkZqnKnY3bsFJHhKCQNASzzIsB0WB4liOFSkZSJCECCFNALQs4HF4jsOlJzQM
+BC4Urzg0TbtkKZKm/o9/33yBIAmS54EgyDwrCZwEKTMBWZ4gEMFIEFAkTfIEK3Ek
+QYukwAJZ03mzxMm0SIuA5CXCzBBAw+XP4wBEkJIhQVOSSHE8TwAWSoAlCC2ikQnd
+6EKqHdiQ5lYdUFJsLgnkIvytOFwrFCgi0regD/NfU7zosGmEPNXhdoiOXK2Y43bn
+uSx62F2cp7sLEcz6h5MFFbukbVNLFCDVpTjsuIXUnKJb0cEkQ5EcyZIkEYejojxF
+RVmK7mB5TmuUIPR3UIGGpKDIMGZBFGkoQZ5iZE6ESOQZRpYRyVLIbBbMLAspltLW
+KPIA0jzS18kCaEYSxeD6ZE67A7cwWpsgW0O6lGw7cOer2tje7l1BmCEYMz4RoP8H
+LNgU9u8vqd0Zhp1YusCW8fpkpyVzOrhxgf969eDX9MDuleP3erZH/LXY9OnLfS/G
+1x9KPtfXGn27rrc/JLltf8rEwW+P9qa3J7qPN6+1zFalZxYNLp0NyI0y+Btu+rZN
+7DhYMbsr+VWs8+xJ0+Pp8pzHnjTDTWDtK/sVNBzY/Oxk+9i1GW/XnT+uZDsT67nm
+nyJNm3zPvdMSYjy7PDQtOiOw54WRCV/R+xXORXtSooLu73zvM7p2nd1qysSOtU+J
+myp3TPl9cy1UhtV6Ou5UV3D70f0PKq9/0PSut+mLG2UJ/QlNW8+/ORy+p7WmEXQE
+kofr58Y6Kr3uof6nIkNXv1FQWhqxKvLHtf2+ihvnlw9XdfaF4M0t1iXbo4y+0IWl
+J6I7h3+5c9l2ZLRpur42oWGg8MLIYKar8FZ1kbPaVrf3tbZL2MOOXru3sSzcVBKO
+/z5hXEOPlp5saUvt7kt0ll297O9aEat+vH7ou6aib5J/+75m4u5Gz5rPJ8sjlg1s
+7W1N2zBzIaytOBss2Xg11bjhbuszbZ8YU1ztsfbjdQ/YIRX78Gm/b11CQ9aIkrs4
+aXVmzZ9e1Ljldkz5iidfeuT5ivvy0npqVH44dj83fvPFqdHYRR7M88PI7qmVh8aF
+vbfedlqvnelxxyQ9H3DulaC6oBkZu3Kv6kjs6QjzNu7YKlaNO2CIEU+BM0lsslhf
++lE6+ehvwv+vhA==
+=WCd4
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/robdimsdale
+
+==================================================================
+
