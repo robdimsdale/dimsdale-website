@@ -1,17 +1,119 @@
-<!doctype html><html><head><meta name=viewport content="width=device-width,initial-scale=1"><meta charset=utf-8><title>Rob Dimsdale-Zucker</title><script type=text/javascript src=//code.jquery.com/jquery-2.1.1.min.js></script><script type=text/javascript src=//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js></script><link rel=stylesheet href=//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css><link href="//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel=stylesheet type=text/css><link rel=stylesheet href=/css/application.css><link rel=icon type=image/png href=/images/favicon-196x196.png sizes=196x196><link rel=icon type=image/png href=/images/favicon-160x160.png sizes=160x160><link rel=icon type=image/png href=/images/favicon-96x96.png sizes=96x96><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32></head><body><div id=wrap><div id=header><nav class="navbar navbar-default" role=navigation><div class=container><div class=row><div class=col-md-12><div class=navbar-header><button type=button class=navbar-toggle data-toggle=collapse data-target=#navbar-collapse>
+<!doctype html><html>
+<head>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset=utf-8>
+<title>Rob Dimsdale-Zucker</title>
+<script type=text/javascript src=//code.jquery.com/jquery-2.1.1.min.js></script>
+<script type=text/javascript src=//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js></script>
+<link rel=stylesheet href=//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css>
+<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css>
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel=stylesheet type=text/css>
+<link rel=stylesheet href=/css/application.css>
+<link rel=icon type=image/png href=/images/favicon-196x196.png sizes=196x196>
+<link rel=icon type=image/png href=/images/favicon-160x160.png sizes=160x160>
+<link rel=icon type=image/png href=/images/favicon-96x96.png sizes=96x96>
+<link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16>
+<link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32>
+</head>
+<body>
+<div id=wrap>
+<div id=header>
+<nav class="navbar navbar-default" role=navigation>
+<div class=container>
+<div class=row>
+<div class=col-md-12>
+<div class=navbar-header>
+<button type=button class=navbar-toggle data-toggle=collapse data-target=#navbar-collapse>
 <span class=sr-only>Toggle navigation</span>
-<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button><h2><a href=/>robdimsdale.com</a></h2></div><div class="collapse navbar-collapse" id=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>Home</a></li><li><a href=/blog/>Blog</a></li><li><a href=/projects/>Projects</a></li><li><a href=/resume/>Resume</a></li></ul></div></div></div></div></nav></div><div class="container page"><div class=row><div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2"><div class=row><div class=col-xs-12><h1>Middleman and Cloud Foundry</h1></div></div><p><a href=https://middlemanapp.com/>Middleman</a> is a static site generator; <a href=http://cloudfoundry.org/>Cloud Foundry</a> is a Platform as a Service.</p><p>Deploying a Middleman static site to Cloud Foundry can be achieved in two ways:</p><ul><li>building the site and pushing the resultant static files</li><li>configuring Middleman to integrate with a Rack-enabled webserver and pushing everything.</li></ul><p>Serving static files is more efficient than running a Rack-enabled webserver, and additionally will not require any extra files or configuration. It is therefore the preferred option.</p><p>###Static-file buildpack</p><p>Static files can be pushed to Cloud Foundry via the <a href=https://github.com/cloudfoundry/staticfile-buildpack>static-file buildpack</a>.</p><ol><li><p>Build the site:</p><pre><code>$ bundle exec middleman build
-</code></pre></li><li><p>Push the site:</p><pre><code>$ cf push middleman-site \
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<h2><a href=/>robdimsdale.com</a></h2>
+</div>
+<div class="collapse navbar-collapse" id=navbar-collapse>
+<ul class="nav navbar-nav navbar-right">
+<li><a href=/>Home</a></li>
+<li><a href=/blog/>Blog</a></li>
+<li><a href=/projects/>Projects</a></li>
+<li><a href=/resume/>Resume</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="container page">
+<div class=row>
+<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+<div class=row>
+<div class=col-xs-12>
+<h1>Middleman and Cloud Foundry</h1>
+</div>
+</div>
+<p><a href=https://middlemanapp.com/>Middleman</a> is a static site generator; <a href=http://cloudfoundry.org/>Cloud Foundry</a> is a Platform as a Service.</p>
+<p>Deploying a Middleman static site to Cloud Foundry can be achieved in two ways:</p>
+<ul>
+<li>building the site and pushing the resultant static files</li>
+<li>configuring Middleman to integrate with a Rack-enabled webserver and pushing everything.</li>
+</ul>
+<p>Serving static files is more efficient than running a Rack-enabled webserver, and additionally will not require any extra files or configuration. It is therefore the preferred option.</p>
+<p>###Static-file buildpack</p>
+<p>Static files can be pushed to Cloud Foundry via the <a href=https://github.com/cloudfoundry/staticfile-buildpack>static-file buildpack</a>.</p>
+<ol>
+<li>
+<p>Build the site:</p>
+<pre tabindex=0><code>$ bundle exec middleman build
+</code></pre></li>
+<li>
+<p>Push the site:</p>
+<pre tabindex=0><code>$ cf push middleman-site \
     -m 32M \
     -p build/ \
     -b https://github.com/cloudfoundry/staticfile-buildpack.git
-</code></pre><p>The syntax is as follows:</p><pre><code>$ cf push &lt;app-name&gt; \
+</code></pre><p>The syntax is as follows:</p>
+<pre tabindex=0><code>$ cf push &lt;app-name&gt; \
     -m &lt;memory-limit&gt; \
     -p &lt;app-directory&gt; \
     -b &lt;custom-buildpack-url&gt;
-</code></pre></li></ol><p>###Rack-enabled webserver</p><p>The <a href=https://github.com/cloudfoundry/ruby-buildpack>ruby buildpack</a> will automatically detect and execute Rack-enabled webservers if a <code>config.ru</code> file is present.</p><ol><li><p>Add a basic <code>config.ru</code> file with the following contents:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby>require <span style=color:#e6db74>&#39;rubygems&#39;</span>
+</code></pre></li>
+</ol>
+<p>###Rack-enabled webserver</p>
+<p>The <a href=https://github.com/cloudfoundry/ruby-buildpack>ruby buildpack</a> will automatically detect and execute Rack-enabled webservers if a <code>config.ru</code> file is present.</p>
+<ol>
+<li>
+<p>Add a basic <code>config.ru</code> file with the following contents:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby>require <span style=color:#e6db74>&#39;rubygems&#39;</span>
 require <span style=color:#e6db74>&#39;middleman/rack&#39;</span>
 
 run <span style=color:#66d9ef>Middleman</span><span style=color:#f92672>.</span>server
-</code></pre></div></li><li><p>Push the application to Cloud Foundry</p><pre><code>$ cf push middleman-site -m 64M
-</code></pre></li></ol></div></div></div></div><div id=footer><div class=container><div class=row><div class=col-xs-12><hr></div></div><div class=row><div class="col-xs-12 col-sm-4 col-md-6"><p class=text-muted>&copy; 2014-2021 Rob Dimsdale-Zucker</p></div><div class="col-xs-12 col-sm-8 col-md-6"><p class="text-muted credit">Using <a href=http://fontawesome.io>fontawesome.io</a> by Dave Gandy</p></div></div></div></div></body></html>
+</code></pre></div></li>
+<li>
+<p>Push the application to Cloud Foundry</p>
+<pre tabindex=0><code>$ cf push middleman-site -m 64M
+</code></pre></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id=footer>
+<div class=container>
+<div class=row>
+<div class=col-xs-12>
+<hr>
+</div>
+</div>
+<div class=row>
+<div class="col-xs-12 col-sm-4 col-md-6">
+<p class=text-muted>&copy; 2014-2022 Rob Dimsdale-Zucker</p>
+</div>
+<div class="col-xs-12 col-sm-8 col-md-6">
+<p class="text-muted credit">Using <a href=http://fontawesome.io>fontawesome.io</a> by Dave Gandy</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
