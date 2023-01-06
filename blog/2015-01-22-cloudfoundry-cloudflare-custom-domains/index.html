@@ -1,98 +1,14 @@
-<!doctype html><html>
-<head>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta charset=utf-8>
-<title>Rob Dimsdale-Zucker</title>
-<script type=text/javascript src=//code.jquery.com/jquery-2.1.1.min.js></script>
+<!doctype html><html><head><meta name=viewport content="width=device-width,initial-scale=1"><meta charset=utf-8><title>Rob Dimsdale-Zucker</title><script type=text/javascript src=//code.jquery.com/jquery-2.1.1.min.js></script>
 <script type=text/javascript src=//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js></script>
-<link rel=stylesheet href=//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css>
-<link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css>
-<link href="//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel=stylesheet type=text/css>
-<link rel=stylesheet href=/css/application.css>
-<link rel=icon type=image/png href=/images/favicon-196x196.png sizes=196x196>
-<link rel=icon type=image/png href=/images/favicon-160x160.png sizes=160x160>
-<link rel=icon type=image/png href=/images/favicon-96x96.png sizes=96x96>
-<link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16>
-<link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32>
-</head>
-<body>
-<div id=wrap>
-<div id=header>
-<nav class="navbar navbar-default" role=navigation>
-<div class=container>
-<div class=row>
-<div class=col-md-12>
-<div class=navbar-header>
-<button type=button class=navbar-toggle data-toggle=collapse data-target=#navbar-collapse>
+<link rel=stylesheet href=//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css><link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans' rel=stylesheet type=text/css><link rel=stylesheet href=/css/application.css><link rel=icon type=image/png href=/images/favicon-196x196.png sizes=196x196><link rel=icon type=image/png href=/images/favicon-160x160.png sizes=160x160><link rel=icon type=image/png href=/images/favicon-96x96.png sizes=96x96><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32></head><body><div id=wrap><div id=header><nav class="navbar navbar-default" role=navigation><div class=container><div class=row><div class=col-md-12><div class=navbar-header><button type=button class=navbar-toggle data-toggle=collapse data-target=#navbar-collapse>
 <span class=sr-only>Toggle navigation</span>
 <span class=icon-bar></span>
 <span class=icon-bar></span>
-<span class=icon-bar></span>
-</button>
-<h2><a href=/>robdimsdale.com</a></h2>
-</div>
-<div class="collapse navbar-collapse" id=navbar-collapse>
-<ul class="nav navbar-nav navbar-right">
-<li><a href=/>Home</a></li>
-<li><a href=/blog/>Blog</a></li>
-<li><a href=/projects/>Projects</a></li>
-<li><a href=/resume/>Resume</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</nav>
-</div>
-<div class="container page">
-<div class=row>
-<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-<div class=row>
-<div class=col-xs-12>
-<h1>Cloud Foundry, CloudFlare and custom domains</h1>
-</div>
-</div>
-<p><a href=https://www.cloudflare.com>CloudFlare</a> is a Content Deliery Network and distributed DNS system; <a href=http://cloudfoundry.org/>Cloud Foundry</a> is a Platform as a Service.</p>
-<p>Routing custom top-level domains (e.g. <code>my-custom-domain.com</code>) and custom subdomains (e.g. <code>blog.my-custom-domain.com</code>) to an app running on a Cloud Foundry instance can be achieved using CloudFlare as a DNS provider as follows:</p>
-<h3 id=hosting-an-application-on-a-cloud-foundry-instance>Hosting an application on a Cloud Foundry instance</h3>
-<p>Sign up for an account with a Cloud Foundry provider (e.g. <a href=https://run.pivotal.io>Pivotal Web Services</a>) and the <a href=http://docs.cloudfoundry.org/devguide/installcf/>install the Cloud Foundry CLI</a>.</p>
-<p>Using the CLI, login and target your org and space:</p>
-<pre tabindex=0><code>$ cf api &lt;e.g. https://api.run.pivotal.io&gt;
+<span class=icon-bar></span></button><h2><a href=/>robdimsdale.com</a></h2></div><div class="collapse navbar-collapse" id=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>Home</a></li><li><a href=/blog/>Blog</a></li><li><a href=/projects/>Projects</a></li><li><a href=/resume/>Resume</a></li></ul></div></div></div></div></nav></div><div class="container page"><div class=row><div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2"><div class=row><div class=col-xs-12><h1>Cloud Foundry, CloudFlare and custom domains</h1></div></div><p><a href=https://www.cloudflare.com>CloudFlare</a> is a Content Deliery Network and distributed DNS system; <a href=http://cloudfoundry.org/>Cloud Foundry</a> is a Platform as a Service.</p><p>Routing custom top-level domains (e.g. <code>my-custom-domain.com</code>) and custom subdomains (e.g. <code>blog.my-custom-domain.com</code>) to an app running on a Cloud Foundry instance can be achieved using CloudFlare as a DNS provider as follows:</p><h3 id=hosting-an-application-on-a-cloud-foundry-instance>Hosting an application on a Cloud Foundry instance</h3><p>Sign up for an account with a Cloud Foundry provider (e.g. <a href=https://run.pivotal.io>Pivotal Web Services</a>) and the <a href=http://docs.cloudfoundry.org/devguide/installcf/>install the Cloud Foundry CLI</a>.</p><p>Using the CLI, login and target your org and space:</p><pre tabindex=0><code>$ cf api &lt;e.g. https://api.run.pivotal.io&gt;
 $ cf login
 $ cf target -o my-org -s my-space
-</code></pre><p>From the working directory of your application, push it to Cloud Foundry:</p>
-<pre tabindex=0><code>$ cd my-app-dir/
+</code></pre><p>From the working directory of your application, push it to Cloud Foundry:</p><pre tabindex=0><code>$ cd my-app-dir/
 $ cf push my-app
-</code></pre><h3 id=mapping-custom-domains-to-your-application>Mapping custom domains to your application</h3>
-<p>Create the domain and map the route to your application (see <a href=http://docs.cloudfoundry.org/devguide/deploy-apps/domains-routes.html>Cloud Foundry documentation</a> for additional information):</p>
-<pre tabindex=0><code>$ cf create-domain my-org my-custom-domain.com
+</code></pre><h3 id=mapping-custom-domains-to-your-application>Mapping custom domains to your application</h3><p>Create the domain and map the route to your application (see <a href=http://docs.cloudfoundry.org/devguide/deploy-apps/domains-routes.html>Cloud Foundry documentation</a> for additional information):</p><pre tabindex=0><code>$ cf create-domain my-org my-custom-domain.com
 $ cf map-route my-app my-custom-domain.com
-</code></pre><h3 id=configuring-dns-in-cloudflare>Configuring DNS in CloudFlare</h3>
-<p><a href=https://www.cloudflare.com/sign-up>Sign up for a CloudFlare account</a>.</p>
-<p>Sign in to your account, and go to the DNS page for your domain (e.g <a href="https://www.cloudflare.com/dns-settings?z=my-custom-domain.com">https://www.cloudflare.com/dns-settings?z=my-custom-domain.com</a>.</p>
-<p>Add a <code>CNAME</code> entry for the domain to point to the default application route provided by Cloud Foundry. For example, on Pivotal Web Services, this url would look like <code>my-app.cfapps.io</code>.</p>
-<p>CloudFlare uses <a href=https://support.cloudflare.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root>CNAME Flattening</a> to be able to utilize a <code>CNAME</code> entry for both custom top-level domains (e.g. <code>my-custom-domain.com</code>) and custom subdomains (e.g. <code>blog.my-custom-domain.com</code>).</p>
-<p>Once this DNS record has propagated (anywhere from a few minutes to 24 hours) you should be able to access your application at both the Cloud Foundry provided url (e.g. <code>my-app.cfapps.io</code>) and your custom domain <code>my-custom-domain.com</code>.</p>
-</div>
-</div>
-</div>
-</div>
-<div id=footer>
-<div class=container>
-<div class=row>
-<div class=col-xs-12>
-<hr>
-</div>
-</div>
-<div class=row>
-<div class="col-xs-12 col-sm-4 col-md-6">
-<p class=text-muted>&copy; 2014-2022 Rob Dimsdale-Zucker</p>
-</div>
-<div class="col-xs-12 col-sm-8 col-md-6">
-<p class="text-muted credit">Using <a href=http://fontawesome.io>fontawesome.io</a> by Dave Gandy</p>
-</div>
-</div>
-</div>
-</div>
-</body>
-</html>
+</code></pre><h3 id=configuring-dns-in-cloudflare>Configuring DNS in CloudFlare</h3><p><a href=https://www.cloudflare.com/sign-up>Sign up for a CloudFlare account</a>.</p><p>Sign in to your account, and go to the DNS page for your domain (e.g <a href="https://www.cloudflare.com/dns-settings?z=my-custom-domain.com">https://www.cloudflare.com/dns-settings?z=my-custom-domain.com</a>.</p><p>Add a <code>CNAME</code> entry for the domain to point to the default application route provided by Cloud Foundry. For example, on Pivotal Web Services, this url would look like <code>my-app.cfapps.io</code>.</p><p>CloudFlare uses <a href=https://support.cloudflare.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root>CNAME Flattening</a> to be able to utilize a <code>CNAME</code> entry for both custom top-level domains (e.g. <code>my-custom-domain.com</code>) and custom subdomains (e.g. <code>blog.my-custom-domain.com</code>).</p><p>Once this DNS record has propagated (anywhere from a few minutes to 24 hours) you should be able to access your application at both the Cloud Foundry provided url (e.g. <code>my-app.cfapps.io</code>) and your custom domain <code>my-custom-domain.com</code>.</p></div></div></div></div><div id=footer><div class=container><div class=row><div class=col-xs-12><hr></div></div><div class=row><div class="col-xs-12 col-sm-4 col-md-6"><p class=text-muted>&copy; 2014-2023 Rob Dimsdale-Zucker</p></div><div class="col-xs-12 col-sm-8 col-md-6"><p class="text-muted credit">Using <a href=http://fontawesome.io>fontawesome.io</a> by Dave Gandy</p></div></div></div></div></body></html>
